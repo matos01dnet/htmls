@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>inputs basicos</h1>
+    <form action="/htmls/inputs_basicos.html" method=" post" >  
+       <label  >nome </label><br>
+       <input placeholder="insira seu nome" type="text" name="nome" class="" id=""/> <br>
+
+     <label> senha</label><br>
+       <input placeholder="insira sua senha" type="password" name="senha" /><br>
+       <!--placeholder é uma tag para o usuario ver oq precisa coloca no input-->
+
+       <label>opçoes</label>
+       <input type="radio" name="opçao">a
+       <input type="radio" name="opçao">b
+       <input type="radio" name="opçao">c
+       <br><br>
+
+       <label>miltipla escolha</label>
+       <input type="checkbox" name="1">
+       <input type="checkbox" name="2">
+       <input type="checkbox" name="3">
+       <br><br>
+
+       <label>texto</label> <br>
+       <textarea name="texto" id="" cols="30" rows="5"></textarea><br><br>
+       <label>arquivo</label>
+       <input type="file" name="arquivo">
+       <br> <br>
+       <label>time</label><br><br>
+       
+       <input type="text" placeholder="insira seu time" name="time" list="lista_times" />
+
+       <datalist id="lista_times">
+           <option value="timao"/>
+           <option value="santos"/>
+           <option value="sao paulo"/>
+        </datalist><br><br>
+
+
+       <label>sexo</label><br>
+
+       <select name="masculino" id="">
+
+        <option selected value="">selecione</option>
+        <option value="feminino">feminino</option>
+        <option  value="masculino">masculino</option>
+
+    
+        
+<br><br>
+       </select>     
+<!--inicio da tabela de carro--><br><br> 
+       <label> marcas de carro</label>
+       <select name="carro" id=""> 
+        <option selected value="">selecione</option>
+         <optgroup label="alemaes" >
+            <option value="mercedes">mercedes</option>
+            <option value="audio">audio</option>
+        </optgroup> 
+
+         <optgroup label="suecos" >
+            <option value="ford">ford</option>
+            <option  value="volvo">volvo</option>
+         </optgroup>
+
+         <optgroup label="brasileiro" >
+            <option value="palio">ford</option>
+            <option  value="uno">volvo</option>
+         </optgroup><br><br>
+         
+       </select><br><br>
+       <input type="button" value="botao sem açao"><br><br>
+       <input type="submit" value="envia"><br><br> <!-- a tag > e de envia dados ele é um botao que faaz parte do impunt submit< vai pega todos os dados que esta na tag > action do formulario < vai fazer  o envio para sua pagina que vai recebe os dados-->
+    </form>
+</body>
+</html>
