@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <style>
+        h1 {
+            font-family: "Sofia", sans-serif;
+            font-size: 30px;
+            text-shadow: 3px 3px 3px #ababab;
+            font-size: 75px;
+            color: blue;
+        }
+
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        section {
+            margin-bottom: 100px;
+            background-color: silver;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        #primeira_sessao> div {
+            background-color: #fff;
+            display: flex;
+            justify-content: start;
+            width: 48%;
+            display: inline-block;
+            padding: 10px;
+            vertical-align: top;
+            min-height: 180px;
+            font-size: 25px;
+            display: block;
+
+        }
+
+        #caixa {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            margin-top: 100px;
+        }
+
+        #caixa2 {
+            background-color: black;
+            width: 100%;
+            height: 100%;
+        }
+
+        #segunda-sessao {
+            background-image: url("imagem.css/fundo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+
+        }
+
+        img {
+            position: absolute;
+            top: 220px;
+            right: 5px;
+            width: 50%;
+            margin: 0px;
+            height: 182px;
+            display: block;
+            padding: 20px;
+
+        }
+
+        @media screen and (max-width: 800px) {
+            img {
+                border-radius: 200px;
+                background-color: red;
+            }
+        }
+    </style>    
+
+<body>
+    <h1>exemplo 4</h1>
+    <section id="primeira_sessao">
+
+        <div>
+
+               <img src="imagem.css/fundo.jpg" alt="fundo_imagem">
+
+            <h2>titulo da noticia 1</h2>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quae nesciunt consequatur itaque similique
+            ipsam dolor repellat dolorem sed suscipit rerum a facere sapiente quas tempora autem doloremque, fugit
+            adipisci?
+
+         
+        </div>
+
+        <div>
+            <h2>titulo noticia 2</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur expedita amet non, maxime quisquam
+            officia cum ex nisi nemo labore, qui voluptatibus optio odit cumque veritatis atque ratione, quidem
+            perspiciatis.
+        </div>
+    </section>
+
+    <section id="segunda-sessao">
+        <div>
+            <h3>titulo da noticia 3</h3>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quae nesciunt consequatur itaque similique
+            ipsam dolor repellat dolorem sed suscipit rerum a facere sapiente quas tempora autem doloremque, fugit
+            adipisci?
+        </div>
+        <div>
+            <h3>titulo noticia 4</h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur expedita amet non, maxime quisquam
+            officia cum ex nisi nemo labore, qui voluptatibus optio odit cumque veritatis atque ratione, quidem
+            perspiciatis.
+        </div>
+    </section>
+
+    <div id="caixa"></div>
+    <div id="caixa2"></div>
+    </div>
+</body>
+
+</html>

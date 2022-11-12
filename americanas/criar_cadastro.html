@@ -1,66 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>americanas</title>
-</head>
-<body>
-     <header>
-       <img src="imagens.2/americanas.jpg">
-     </header> <!--parte de imagem-->
 
-     <section> 
-        <h2>criar seu cadastro </h2>
-        <p>veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)</p><br><br>
-     </section>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>americanas</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+      color: #666666;
+      border: none;
+      height: 100vh;
+      overflow-x: hidden;
+      text-align: center;
+      border-color: none;
+
+    }
+
+    .vermelho {
+      width: 200%;
+      height: 93px;
+      background-color: rgb(248, 0, 50);
+    }
+
+    header {
+      position: relative;
+      top: -67px;
+      right: -67px;
+    }
+
+    img {
+      height: 36px;
+      position: absolute;
+      left: 41px;
+
+
+    }
+
+    section {
+      margin-bottom: 60px;
+
+    }
+
+    h2 {
+      font-size: 36px;
+      position: absolute;
+      left: 200px;
+      bottom: 950px;
+      right: 157px;
+      text-align: center;
+      margin-bottom: 20px;
+      height: 0px;
+      border-color: #999999;
+      top: -138px;
+    }
+
+    .conteine {
+      position: absolute;
+      top: 270px;
+      right: 300px;
+    }
+
+
+    #segundo {
+      max-width: 590px;
+      font-size: 20px;
+      color: #666;
+      text-transform: lowercase;
+      margin-bottom: 0px;
+      text-align: center;
+      position: absolute;
+      top: -70px;
+      left: 90px;
+
+    }
+
+    #terceiro {
+      margin: 0px 0px 36px;
+      font-size: 13px;
+    }
+
+    #ponto {
+      color: red;
+      font-size: 16px;
+      margin-right: 3px;
+      width: 200px;
+      height: 200px;
+
+    }
+
+    .opçoes {
+      width: 24px;
+      height: 24px;
+      padding: 30px;
+
+
+    }
+
+    .cntopçoes {
+      padding: 0px 0px 0px 5px;
+      color: #666;
+    }
+
+    .conjunto1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      margin: 0px 0px 15px 0px;
+      width: 80%;
+      height: 27px;
+    }
+
+    #inputum {
+      width: 368px;
+      height: 48px;
+      border: solid 1px;
+      border-radius: 8px;
+      cursor: pointer;
+      position: relative;
+       left: -61px;
+
+    }
+
+    #nome {
+      position: absolute;
+      top: 50px;
+      left: 162px;
+
+    }
+
+    #nome2 {
+      position: absolute;
+      top: 140px;
+      left: 164px;
+    }
+
+    #nomedoiss {
+      font-size: 0.875rem;
+      position: absolute;
+      left: 168px;
+    }
+
+    #nome3 {
+      position: absolute;
+      left: 161px;
+    }
+
+    #nome33 {
+      position: absolute;
+      left: 172px;
+      font-size: 0.875rem;
+    }
+
+    #nome4 {
+      position: absolute;
+      left: 170px;
+      width: 98px;
+      height: 37px;
+      margin: -11px -1px;
+      padding: 1px 1px 4px 15px;
+      border: solid 1px #999999;
+      border-radius: 9px 8px 8px 8px;
+    }
+
+    #inputum {
+      border: solid 1px #999999;
+    }
+
+    .abaixa {
+      margin: 19px 124px 0px 54px;
+      padding: 0px;
+    }
+
+    #cpf {
+      position: absolute;
+      left: 170px;
+      font-size: 1rem;
+    }
+
+    #cpf1 {
+      position: absolute;
+      left: 172px;
+      font-size: 0.875rem;
+    }
+
+    #cpf2 {
+      width: 138px;
+      height: 20px;
+      padding: 1px 1px 4px 15px;
+      border: solid 1px #999999;
+      border-radius: 9px 8px 8px 8px;
+      margin: 0px 7px 0px 0px;
+      position: absolute;
+      left: 170px;
+    }
+
+    #link1 {
+      position: absolute;
+      margin: 14px 3px 0px -201px;
+      color: #666666;
+      padding: 4px 0px 14px;
+    }
+
+    #primeiros {
+      padding: 10px;
+      margin: 7px -66px 0px -37px;
+    }
+
+    #segundoo {
+      position: absolute;
+      left: 180px;
+      margin: -6px -8px 0px -11px;
+    }
+
+    #ppk {
+      color: red;
+    }
+
+    .doismenor {
+      padding: 13px;
+
+    }
+
+    #terceiroo {
+      position: absolute;
+      left: 178px;
+      top: 456px;
+      font-size: 0.875rem;
+      margin-bottom: 10px;
+
+    }
+
+    #terceiro1 {
+      width: 147px;
+      height: 39px;
+      border-radius: 8px;
+      border: solid 1px #999999;
+      margin: 20px 132px 10px -142px;
+
+    }
+
+    .doismenor {
+      padding: 9px 94px 19px 11px;
+      margin: -11px;
+
+    }
+
+    #rcb {
+      margin: 9px 2px 35px 13px;
+
+    }
+
+    #cincom {
+      position: absolute;
+      left: 160px;
+
+    }
+
+    #emaill {
+      padding: 1px 2px;
+      height: 30px;
+      width: 265px;
+      border: solid 1px #666666;
+      border-radius: 8px;
+      margin-bottom: 17px;
+      margin:8px 19px 45px -89px
+    }
+
+    #pequeno {
+      color: #666666;
+      font-size: 0.770rem;
+      position: absolute;
+      left: 157px;
+      margin: 4px;
+      padding: 0px;
+    }
+
+    #denovo {
+      position: absolute;
+      left: 156px
+    }
+
+    #caiu {
+
+      margin-top: 23px;
+      margin-bottom: 20px;
+
+    }
+
+    #senha1 {
+      position: absolute;
+      left: 157px;
+    }
+
+    #senha2 {
+      font-size: 0.770rem;
+      margin-left: -177px;
+      position: relative;
+      top: -19px;
+      color: #666666;
+
+    }
+
+    #ponto4 {
+      color: red;
+    }
+    #rcb{
+      margin: 9px 6px 35px -109px;
+    }
+    #sms1{ position: relative;
+      left: -59px;
+    
+    }
+    #btnn{
+      position: relative;
+      left: -149px;
+}
+  #fraca{
+    position: relative;
+  left: -147px;
+}
+  #fracaum{
+    position: relative;
+left: -138px;
+top: -7px;
+  }
+  #dados1{
+    position: relative;
+left: -250px;
+bottom: -20px;
+  }
+  #dados2{
+    display: block;
+position: relative;
+left: -69px;
+
+  }
+  #btnk{
+    text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  background-color: #f80032;
+  border: 1px solid rgb(248, 0, 50); 
+  border-radius: 8px;
+  padding: 12px;
+  height: 48px;
+  width: 392px;
+  text-align: center;
+  position: relative;           
+  left: -49px;
+  margin: -6px 0px 12px 0px;
+  cursor: pointer;
+  font-size: 14px;
+text-transform: full-size-kana;
+}
+         
+#btnk:hover{
+  transition: all 4.ms;
+  background-color: rgb(235, 51, 67);
+}
+#puro1{
+  color:#666;
+}
+.nnn{
+  color: rgb(102, 102, 102);
+  font-weight: bold;
+}
+#haha{color:red; 
+  position:relative;
+  left: -4px;
+
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="vermelho"></div>
+
+  <header>
+    <img src="imagens.2/certinho.png" alt="imagem01">
+    <!--parte de imagem-->
+  </header>
+
+
+  <section class="conteine">
+    <!--tela de cadastro abaixo -->
+
+
 
     <form>
-        <label>nome completo</label>
-        <input type="text" name="nome"id=><br><br>
-
-        <label>gênero</label><br>
-        <span>pra gente te conhecer um pouquinho melhor :)</span><br><br>
-        <input type="radio" name="femenino">femenino
-        <input type="radio" name="masculino">masculino
-        <input type="radio" name="nao informa">nao informar<br><br>
-
-        <label>* data de nascimento</label><br><br>
-        <span>necessário pra identificar a maioridade, no formato DD/MM/AAAA</span><br><br>
-        <input type="date" name="data" id=""><br><br>
-
-        <label>CPF</label><br>
-       <span>necessário pra emissão das Notas Fiscais  </span><br>
-       <input type="tel" name="cpf" id=""><br>
-
-       <a href ="https://empresas.americanas.com.br/?chave=brd_ca_popup_0_0_empresas">é pessoa jurídica? conheça a americanas empresas </a><br><br>
-       <label>telefone</label><br>
-       <span>caso a gente precise entrar em contato sobre seus pedidos</span><br>
-       <input type="tel" name="tel" placeholder="(__) _____-____"  maxlengtlh="14" maxlength="14"  id=""><br><br>
-
-        <input type="checkbox">receber notificações por whatsapp<br>
-        <label>celular </label>
-       <input data-cy="formField__cellphone" type="tel"  maxlength="14" mask="(99) 99999-9999" autocorrect="off" name="cellphone" placeholder="(__) _____-____" class="inputcomponent__InputFieldInput-sc-x88sc3-3 cXOnMx" value=""><br><br>
-
-       <label>email</label>
-       <input type="email" name="email" id=""><br>
-       <input type="checkbox" name="recebe notificaçoes" >receber e-mails promocionais<br><br>
-
-       <label>senha</label><br>
-       <span>precisa ter entre 6 e 20 caracteres  </span><br>
-       <input type="password"><br>
-
-       <input type="range" name="range" id="" min="0" max="100" step="10">fraca <br>
-       <input type="checkbox" name="compatilha notificaçoes" id="">
-       <span>compartilhar meus dados com parceiros para ter conteúdos personalizados,<a href="https://www.americanas.com.br/">veja como funciona.</a> </span>     
-      <br><br>
-      
-      <button> <a href="https://www.americanas.com.br/"></a>criar seu cadastro </button><br><br<br><br>
-      <label>Não se preocupe, nosso site é seguro! Ao criar o seu cadastro, você concorda com a <a href="https://www.americanas.com.br/hotsite/politica-de-privacidade">nossa Política de Privacidade</a> </label><br><br>
-      <label>já tem cadastro? <a href="#"></a></label>
+      <div id="h2">
+        <h2>criar seu cadastro </h2>
+        <div>
+          <p id="segundo">veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada :)
+          </p>
+          <p id="terceiro"> <span id="ponto">*</span>
+            campos obrigatórios
+          </p>
 
 
+          <label id="nome"> <span id="ponto">*</span> nome completo
+          </label> <br>
+
+          <input type="text" name="nome" id="inputum"><br><br>
+
+          <label id="nome2"> <span id="ponto">*</span>gênero</label><br>
+          <span id="nomedoiss">pra gente te conhecer um pouquinho melhor :)</span><br><br>
+
+          <div class="conjunto1">
+            <input class="opçoes" type="radio" name="f">
+            <span class="cntopçoes" id="femenino">femenino</span>
+            <input class="opçoes " type="radio" name="m">
+            <span class="cntopçoes" id="masculino">mascuslino</span>
+            <input class="opçoes " type="radio" name="nao informa">
+            <span class="cntopçoes" id="outra">não informa</span><br><br>
+          </div>
+
+
+          <label id="nome3"> <span id="ponto">*</span> data de nascimento</label><br>
+          <span id="nome33">necessário pra identificar a maioridade, no formato DD/MM/AAAA</span><br><br>
+          <input id="nome4" type="tel" required="" mask="99/99/9999" maxlength="10" placeholder="__/__/____"><br>
+
+          <div class="abaixa">
+            <label id="cpf"> <span id="ponto">*</span>CPF</label><br>
+            <span id="cpf1">necessário pra emissão das Notas Fiscais </span><br>
+            <input type="tel" name="cpf" id="cpf2" placeholder="___.___.___-__"><br>
+
+            <a id="link1" href="https://empresas.americanas.com.br/?chave=brd_ca_popup_0_0_empresas">é pessoa jurídica?
+              conheça a
+              americanas empresas </a><br><br>
+
+            <section id="primeiros">
+              <label id="segundoo">
+                <span id="ppk">*</span> telefone</label><br>
+
+              <span id="terceiroo">caso a gente precise entrar em contato sobre seus pedidos</span><br>
+              <input id="terceiro1" type="tel" name="tel" placeholder="  (__)- __-__" maxlengtlh="14" maxlength="14"
+                id=""><br><br>
+              <div id="tresmenor">
+
+                <div class="doismenor">
+
+                  <input id="rcb" type="checkbox">receber notificações por whatsapp<br>
+                  <label id="cincom"> <span id="haha">*</span>email</label><br>
+                  <span id="pequeno">caso a gente precise entrar em contato sobre seus pedidos
+                  </span><br></br>
+
+                  <input id="emaill" type="email" name="email" id=""><br>
+                  <input id="denovo" type="checkbox" name="recebe notificaçoes">
+                  <span id="sms1">receber e-mails promocionais</span><br>
+                  <div id="caiu">
+                    <label id="senha1">
+                      <span id="ponto4">*</span> senha</label><br>
+                  </div>
+                  <span id="senha2">precisa ter entre 6 e 20 caracteres </span><br>
+                </div>
+
+              </div>
+              <input id="btnn" type="password"><br>
+            </section>
+
+          </div>
+          <input id="fraca" type="range" name="range" id="" min="0" max="100" step="10"><span id="fracaum"> fraca</span>
+          <br>
+
+          <input id="dados1" type="checkbox" name="compatilha notificaçoes" id="">
+          <div id="dados2">  
+          <span >compartilhar meus dados com parceiros para  ter<br> conteúdos personalizados, veja <a id="puro1"
+              href="https://www.americanas.com.br/">como funciona.</a> </span>
+            </div>
+
+          <br><br>
+          <button id="btnk"> <a href="https://www.americanas.com.br/"></a>criar seu cadastro </button><br>
+          <br<br><br>
+
+            <p id="certinho">  Não se preocupe, nosso site é seguro! Ao criar o seu cadastro,  você concorda com a <a class="nnn"
+                href="https://www.americanas.com.br/hotsite/politica-de-privacidade">nossa Política de Privacidade</a>
+            </p>  
+
+            <label>já tem cadastro? <a class="nnn" href="login.html">entrar</a></label><br><br>
     </form>
+
+  </section>
+
 </body>
-</html>
+
+</html>                  
