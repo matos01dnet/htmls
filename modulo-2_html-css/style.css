@@ -1,0 +1,130 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+    color: #0000ffad;    
+    background-color: white;
+    }
+nav{
+    background-color: rgba(79, 81, 83, 0.116) ;
+    padding: 5px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-right: 60px;
+    box-shadow: 9px 10px 99px 24px  red;
+}
+nav > a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+a:hover {
+    color: gold;
+    transition: all 0.5s;
+
+}
+#assunto{
+    background-color: white;
+    padding: 1px;
+    margin: 1px;
+
+
+}
+#autor{
+    background-color: white;
+    padding: 1px;
+    margin: 1px;
+
+
+
+}
+article{
+    background-color: white;
+    padding: 1px;
+    margin: 1px;
+
+
+
+}
+footer{
+    background-color: rgba(31, 24, 24, 0.164);
+    text-align: center;
+    padding: 1px;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+
+
+/* embaixo é a parte do nav personaliazdo */
+
+
+.primeiro{
+background-color: rgba(255, 0, 0, 0.041);
+color:white;
+}
+
+
+
+.primeiro > ul > li {
+     display: none;        
+color:white;
+
+
+
+}
+.primeiro:hover ul > li {
+display: block;  
+color: blue;
+padding-left: 15px;
+
+}
+           /* primeiro; */
+
+.dois{
+color:white;
+}
+.dois > ul > li {
+display: none;
+}
+.dois:hover ul > li {
+display: block;
+color: blue;
+padding-left: 15px;
+
+}
+/* segundo */
+.tres{
+color:white;
+}
+.tres > ul > li {
+display: none;
+}
+.tres:hover > ul > li {
+display: block;
+color: blue;
+padding-left: 15px;
+
+}
+li {
+display: contents;
+flex-direction: column;
+align-items: center;
+}
+
+main{
+    border-radius: 20px 0px 20px 0px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #6a755f;
+}

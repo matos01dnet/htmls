@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<p id="box"></p>
+
+<body>
+    <script>
+     let nome = window.prompt("qual  é seu nome"); // maiuscula e minuscula duas forma usada 
+
+  document.getElementById("box").innerHTML = (" quantidade de letra <br>" + nome.length + " <br> prazer sr(a) <br>  " + nome + " seu nome em maiuscula é assim " + nome.toUpperCase() + "seu nome em miniuculas olha ae "+ nome.toLocaleLowerCase() )
+
+
+
+
+
+
+
+
+
+      
+                     //else ( nome.length == "" )
+                     //document.getElementById("box").innerHTML = ("nome nao colocado   "+ nome.length + "  nome n colocado  "+ nome);
+
+    </script>
+
+</body>
+
+</html>

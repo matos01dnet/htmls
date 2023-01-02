@@ -1,0 +1,82 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu html</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .submenu{
+            background-color: greenyellow;
+            padding: 10px;
+        }
+        ul{
+            list-style: none;
+        }
+    </style>
+    <script>
+         function inicial(){
+
+            for (let index = 0; index <= 9; index++) {
+                document.getElementsByClassName("submenu")[index].style.display= "none"
+            }
+
+
+            }
+            function exibirMenu()  {
+
+            if( document.getElementsByClassName("submenu")[0].style.display == "none") {
+            for (let index = 0; index <= 9; index++) {
+              
+                document.getElementsByClassName("submenu")[index].style.display= "block"
+            }
+
+
+
+                } else {
+
+            for (let index = 0; index <= 9; index++) {
+            document.getElementsByClassName("submenu")[index].style.display= "none"
+
+
+                }
+
+
+                }
+
+                }
+
+    
+    </script>
+</head>
+<body onload="inicial()">
+    
+        <ul onclick="exibirMenu();" > menu
+            <li class="submenu">item 0</li>
+            <li class="submenu" >item 1</li>
+            <li class="submenu">item 2</li>
+            <li class="submenu">item 3</li>
+            <li class="submenu">item 4</li>
+            <li class="submenu">item 5</li>
+            <li class="submenu">item 6</li>
+            <li class="submenu">item 7</li>
+            <li class="submenu">item 8</li>
+            <li class="submenu">item 9</li>
+
+
+
+    
+        </ul>
+    
+       
+    
+    
+</body>
+</html>
+       
+  

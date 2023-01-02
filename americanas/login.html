@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://images-americanas.b2w.io/catalog-statics/acom/favicon-americanas.ico" sizes="16x16">
     <title>login</title>
+    <script>
+        function funcaoteste(){
+            document.getElementById("password").style.border = "solid 3px red"
+
+        }
+    </script>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -172,7 +179,7 @@
                 <label>senha na americanas: </label><br>
                 <input type="password" name="password" id="password"><br><br>
 
-                <button type="button" id="button"> <a href="#"></a>continuar</button>
+                <button onclick="javascript:funcaoteste()" type="button" id="button" value="aciona"> <a href="#"></a>continuar</button>
 
                 <p class="cadastro" id="final2"> não tem cadastro?  <a href="criar_cadastro.html">cadastre-se</a>
                  </p>
